@@ -21,10 +21,10 @@ object ScalaBuffBuild extends Build {
 	lazy val buildSettings = Seq(
 		name := "ScalaBuff",
 		organization := "net.sandrogrzicic",
-		version := "1.2.3-SNAPSHOT",
-		scalaVersion := "2.10.1",
-		//scalaVersion := "2.11.0-M3",
-		//scalaBinaryVersion := "2.11.0-M3",
+		version := "1.2.3-THIB",
+		// scalaVersion := "2.10.1",
+		scalaVersion := "2.11.0-M3",
+		scalaBinaryVersion := "2.11.0-M3",
 		logLevel := Level.Info
 	)
 
@@ -46,7 +46,7 @@ object ScalaBuffBuild extends Build {
 		
 		libraryDependencies ++= Seq(
 			"org.scalatest" %% "scalatest" % "1.9.1" % "test",
-			"com.google.protobuf" % "protobuf-java" % "2.4.1"
+			"com.google.protobuf" % "protobuf-java" % "2.5.0"
 		),
 
 		crossScalaVersions ++= Seq("2.9.3", "2.10.1"),
